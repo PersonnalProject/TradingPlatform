@@ -1,0 +1,29 @@
+﻿<Window x:Class="Finance.CompteAchatDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Finance"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        mc:Ignorable="d"
+        Title="CompteAchatDetail" Height="283.004" Width="323.023">
+    <Grid>
+        <Button Name="FermerPositionButton" Click="FermerPositionButton_Click" Content="Fermer position" Background="Yellow" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,138,0,0"  Width="315"/>
+        <Button Name="EnregistrerPositionButton" Click="EnregistrerPositionButton_Click" Content="Enregistrer position" Background="DodgerBlue" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,176,0,0"  Width="315"/>
+        <Label Content="Prix d'achat" HorizontalAlignment="Left" Margin="9,16,0,0" VerticalAlignment="Top"/>
+        <Label Name="PrixAchat" Content="" HorizontalAlignment="Left" Margin="97,16,0,0" VerticalAlignment="Top"/>
+        <Label Content="Gain" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top"/>
+        <Label Name="Benefice" Content="{Binding BenefAchat}" HorizontalAlignment="Left" Margin="61,39,0,0" VerticalAlignment="Top"/>
+        <Label Content="Quantite" HorizontalAlignment="Left" Margin="172,16,0,0" VerticalAlignment="Top"/>
+        <Label Name="Quantite" Content="" HorizontalAlignment="Left" Margin="228,16,0,0" VerticalAlignment="Top"/>
+        <Label Content="Gain Total" HorizontalAlignment="Left" Margin="172,34,0,0" VerticalAlignment="Top"/>
+        <Label Name="BeneficeTotal" Content="{Binding TotalAchat}" HorizontalAlignment="Left" Margin="246,38,0,0" VerticalAlignment="Top"/>
+        <Label Content="Stop Loss" HorizontalAlignment="Left" Margin="11,88,0,0" VerticalAlignment="Top"/>
+        <Label Content="Take profit"  HorizontalAlignment="Left" Margin="157,88,0,0" VerticalAlignment="Top"></Label>
+        <TextBox Name="StopLossText" HorizontalAlignment="Left" Height="23" Margin="76,91,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="76"/>
+        <TextBox Name="TakeProfitText" HorizontalAlignment="Center" Height="23" Margin="228,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
+
+
+
+    </Grid>
+</Window>
